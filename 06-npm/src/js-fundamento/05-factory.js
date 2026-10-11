@@ -1,5 +1,5 @@
-const { getId } = require ('../../plugins/get-id.plugin');
-const { getAge } = require ( '../../plugins/get-age.plugin');
+
+const { getAge, getId } = require ( '../../plugins'); // no ponemos index.js porque por defecto busca el index.js
 
 const buildPerson = ({name, birthDate}) => {
     return {
