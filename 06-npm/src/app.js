@@ -1,5 +1,4 @@
 
-const {getUserById} = require('./js-fundamento/05-factory');
+const getPokemonById = require('./js-fundamento/06-promise');
 
-
-
+getPokemonById(1);
