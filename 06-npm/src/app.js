@@ -1,4 +1,9 @@
 
-const getPokemonById = require('./js-fundamento/06-promise4-plugin');
+const readFiles = require('./js-fundamento/07-async-awail-readtxt');
 
-getPokemonById(1).then((nombre) =>  console.log(nombre)); 
+readFiles()
+  .then((files) => console.log(files)) // Log the contents of the read files
+  .catch((error) => {
+    console.error('Unable to read text files:', error.message);
+    process.exitCode = 1;
+  });
