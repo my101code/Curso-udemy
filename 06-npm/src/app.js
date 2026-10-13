@@ -1,4 +1,4 @@
 
-const getPokemonById = require('./js-fundamento/06-promise');
+const getPokemonById = require('./js-fundamento/06-promise2');
 
-getPokemonById(1);
+getPokemonById(3);
