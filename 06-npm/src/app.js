@@ -1,5 +1,6 @@
 
-const { prepararPizza, avisarCliente } = require('./js-fundamento/03-callbacks2');
+const { buscarUsuario } = require('./js-fundamento/03-callbacks3-con-datos.js');
 
-prepararPizza(avisarCliente);       // La función
-avisarCliente();                    // Ejecutar la función
+buscarUsuario(8, (usuario) => {
+  console.log(usuario.nombre);
+});
