@@ -1,6 +1,5 @@
 
-const getPokemonById = require('./js-fundamento/06-promise3');
+const { prepararPizza, avisarCliente } = require('./js-fundamento/03-callbacks2');
 
-getPokemonById(20)
-    .then((pokemon) => console.log({pokemon})) //devuelve el nombre del pokemon
-    .finally(() => console.log('Finalizó la ejecución de la promesa')); //se ejecuta al final de la promesa, sin importar si se resolvió o se rechazó
+prepararPizza(avisarCliente);       // La función
+avisarCliente();                    // Ejecutar la función
