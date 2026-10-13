@@ -1,4 +1,4 @@
 
-const getPokemonById = require('./js-fundamento/07-async-awailt');
+const getPokemonById = require('./js-fundamento/06-promise4-plugin');
 
-getPokemonById(1).then((nombre) =>  console.log(nombre)); // imprime "wartortle"
+getPokemonById(1).then((nombre) =>  console.log(nombre)); 
