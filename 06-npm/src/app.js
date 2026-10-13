@@ -1,6 +1,4 @@
 
-const { buscarUsuario } = require('./js-fundamento/03-callbacks3-con-datos.js');
+const getPokemonById = require('./js-fundamento/07-async-awailt');
 
-buscarUsuario(8, (usuario) => {
-  console.log(usuario.nombre);
-});
+getPokemonById(1).then((nombre) =>  console.log(nombre)); // imprime "wartortle"
